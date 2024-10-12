@@ -1,0 +1,52 @@
+object DM: TDM
+  Height = 216
+  Width = 793
+  object RESTTarefa: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://localhost:9000/tarefa'
+    Params = <>
+    SynchronizedEvents = False
+    Left = 45
+    Top = 32
+  end
+  object ReqTarefaGET: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTTarefa
+    Params = <>
+    SynchronizedEvents = False
+    Left = 134
+    Top = 38
+  end
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Username = 'BDMG'
+    Password = '123@2024'
+    Left = 627
+    Top = 51
+  end
+  object REQTarefaPOST: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTTarefa
+    Params = <>
+    SynchronizedEvents = False
+    Left = 325
+    Top = 38
+  end
+  object REQTarefaDELETE: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTTarefa
+    Params = <>
+    SynchronizedEvents = False
+    Left = 173
+    Top = 102
+  end
+  object REQTarefaPut: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTTarefa
+    Params = <>
+    SynchronizedEvents = False
+    Left = 333
+    Top = 126
+  end
+end

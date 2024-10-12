@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/10/11 15:06:48.000.755,=C:\Users\vagne\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/11 15:08:16.000.782,C:\Users\vagne\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Delphi\BDMG\Fontes\View\untTarefas.dfm</Transaction>
+    <Transaction>2024/10/11 15:08:16.000.782,C:\Users\vagne\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Delphi\BDMG\Fontes\View\untTarefas.pas</Transaction>
+    <Transaction>2024/10/11 15:08:28.000.330,C:\Users\vagne\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Delphi\BDMG\Fontes\View\ControleTarefas.dproj</Transaction>
+    <Transaction>2024/10/11 15:20:39.000.457,=D:\Delphi\BDMG\Fontes\View\Unit1.pas</Transaction>
+    <Transaction>2024/10/11 15:25:27.000.751,D:\Delphi\BDMG\Fontes\View\Unit1.dfm=D:\Delphi\BDMG\Fontes\DAO\untDM.dfm</Transaction>
+    <Transaction>2024/10/11 15:25:27.000.751,D:\Delphi\BDMG\Fontes\View\Unit1.pas=D:\Delphi\BDMG\Fontes\DAO\untDM.pas</Transaction>
+    <Transaction>2024/10/11 18:04:53.887,D:\Delphi\BDMG\Fontes\ControleTarefas.dproj=D:\Delphi\BDMG\Fontes\View\ControleTarefas.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

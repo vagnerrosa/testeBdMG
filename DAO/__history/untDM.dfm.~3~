@@ -1,0 +1,32 @@
+object DM: TDM
+  Height = 270
+  Width = 423
+  PixelsPerInch = 120
+  object RESTClient1: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    BaseURL = 'http://localhost:9000/tarefa'
+    Params = <>
+    SynchronizedEvents = False
+    Left = 56
+    Top = 40
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 216
+    Top = 112
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 64
+    Top = 160
+  end
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Username = 'BDMG'
+    Password = '123@2024'
+    Left = 288
+    Top = 24
+  end
+end

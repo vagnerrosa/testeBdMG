@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{45500C62-6EAB-46C0-A6E0-9AE1D09AA153}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ServerHorse.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ControleTarefas.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ServerHorse">
+        <MSBuild Projects="ServerHorse.dproj"/>
+    </Target>
+    <Target Name="ServerHorse:Clean">
+        <MSBuild Projects="ServerHorse.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServerHorse:Make">
+        <MSBuild Projects="ServerHorse.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ControleTarefas">
+        <MSBuild Projects="ControleTarefas.dproj"/>
+    </Target>
+    <Target Name="ControleTarefas:Clean">
+        <MSBuild Projects="ControleTarefas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControleTarefas:Make">
+        <MSBuild Projects="ControleTarefas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ServerHorse;ControleTarefas"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ServerHorse:Clean;ControleTarefas:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ServerHorse:Make;ControleTarefas:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
